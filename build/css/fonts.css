@@ -1,0 +1,7 @@
+/* font-family: "Temp logo"; */
+@font-face {
+    font-family: "logo";
+    src: url("../fonts/logotype/choco.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
