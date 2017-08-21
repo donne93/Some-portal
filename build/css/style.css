@@ -1546,6 +1546,195 @@ body .container {
   font-weight: bold;
   text-transform: uppercase;
 }
+/*================================ Account ================================*/
+.account {
+  width: 100%;
+  margin: 50px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.account .col-md-10 {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 70px;
+}
+.account .col-md-10 .my-cab {
+  color: deeppink;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.account .col-md-10 .your-akk-block {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.account .col-md-10 .your-akk-block .avatar-block {
+  width: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-right: 25px;
+}
+.account .col-md-10 .your-akk-block .avatar-block img {
+  width: 100px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+.account .col-md-10 .your-akk-block .avatar-block input {
+  display: none;
+}
+.account .col-md-10 .your-akk-block .avatar-block button {
+  border: none;
+  outline: none;
+  color: #444;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.account .col-md-10 .your-akk-block .avatar-block button:hover {
+  color: deeppink;
+}
+.account .col-md-10 .your-akk-block .account-info-block {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-right: 25px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 25px;
+  border: 2px solid #444;
+  padding: 15px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-m-sp {
+  color: deeppink;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line:last-child {
+  margin-bottom: 0;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .inf-sp {
+  color: #444;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line span {
+  color: #ADADAD;
+  font-size: 15px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-left: 15px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl .inf-sp {
+  color: #444;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl p {
+  width: 85%;
+  max-width: 85%;
+  color: #ADADAD;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+.account .col-md-10 .your-akk-block .account-info-block .change-inf-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.account .col-md-10 .your-akk-block .account-info-block .change-inf-line button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 9px 20px;
+  background-color: deeppink;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.account .col-md-2 {
+  min-height: 600px;
+  border: 1px solid #000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.account .col-md-2 .advertisinig {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 /*================================ Footer ================================*/
 .footer {
   width: 100%;
