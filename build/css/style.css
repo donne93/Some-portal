@@ -2262,8 +2262,22 @@ body .container {
 .forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line:last-child {
   border-bottom: none;
 }
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .theme-sign {
+  width: 5%;
+  height: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-right: 1px solid #444;
+}
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .theme-sign .fa {
+  color: deeppink;
+}
 .forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes {
-  width: 60%;
+  width: 55%;
   height: 60px;
   display: -ms-flexbox;
   display: flex;
