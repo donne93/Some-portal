@@ -2172,11 +2172,13 @@ body .container {
   color: deeppink;
   font-size: 25px;
   font-weight: bold;
+  text-decoration: underline;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 .forum .forums-main-themes .one-forum-main-theme .f-theme-name:hover {
   color: #444;
+  text-decoration: none;
 }
 .forum .forums-main-themes .one-forum-main-theme .block-with-theme-list {
   width: 100%;
@@ -2185,6 +2187,7 @@ body .container {
   -ms-flex-direction: column;
       flex-direction: column;
   box-shadow: 0 0 15px #ADADAD;
+  margin-bottom: 20px;
 }
 .forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-head {
   width: 100%;
@@ -2311,6 +2314,30 @@ body .container {
   color: #444;
   font-size: 18px;
   font-weight: bold;
+}
+.forum .forums-main-themes .one-forum-main-theme .more-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+.forum .forums-main-themes .one-forum-main-theme .more-line .f-more {
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: deeppink;
+  border: 1px solid deeppink;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.forum .forums-main-themes .one-forum-main-theme .more-line .f-more:hover {
+  color: #444;
+  background-color: transparent;
+  border: 1px solid #444;
 }
 .forum .clues-for-pics {
   width: 100%;
