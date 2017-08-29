@@ -21,7 +21,52 @@ body .container {
 /*================================ Header ================================*/
 .header {
   width: 100%;
-  height: 73px;
+  height: 150px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  border-bottom: 2px solid #444;
+}
+.header .logo-forum {
+  width: 60%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header .logo-forum .logotype {
+  font-size: 55px;
+  color: #000;
+  font-family: "logo";
+  color: deeppink;
+}
+.header .logo-forum .forum-bt {
+  color: #fff;
+  padding: 4px 15px;
+  background-color: deeppink;
+  font-size: 18px;
+  margin-left: 20px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid deeppink;
+}
+.header .logo-forum .forum-bt:hover {
+  color: deeppink;
+  background-color: transparent;
+  border: 1px solid deeppink;
+}
+.header .nav-search-block {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -30,24 +75,7 @@ body .container {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  border-bottom: 2px solid #444;
-}
-.header .logotype {
-  margin-left: 10px;
-  font-size: 50px;
-  color: #000;
-  font-family: "logo";
-  color: deeppink;
-}
-.header .nav-search-block {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  padding: 0 15px;
 }
 .header .nav-search-block .header-nav-menu {
   margin: 0;
@@ -72,20 +100,71 @@ body .container {
 .header .nav-search-block .header-nav-menu li a:hover {
   color: deeppink;
 }
-.header .nav-search-block .forum-bt {
-  color: #fff;
-  padding: 4px 15px;
-  background-color: deeppink;
-  font-size: 18px;
-  margin-left: 20px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid deeppink;
+.header .nav-search-block .not-login-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
-.header .nav-search-block .forum-bt:hover {
-  color: deeppink;
+.header .nav-search-block .not-login-block button {
+  border: none;
+  outline: none;
+  color: #444;
+  font-size: 17px;
   background-color: transparent;
-  border: 1px solid deeppink;
+}
+.header .nav-search-block .not-login-block button:hover {
+  color: deeppink;
+  text-decoration: underline;
+}
+.header .nav-search-block .not-login-block span {
+  color: #444;
+  font-size: 17px;
+}
+.header .nav-search-block .login-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+.header .nav-search-block .login-block .your-akk {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  margin-right: 4px;
+}
+.header .nav-search-block .login-block .your-akk .fa {
+  color: deeppink;
+  margin-right: 3px;
+}
+.header .nav-search-block .login-block .your-akk .akk-n {
+  color: deeppink;
+  font-size: 17px;
+  font-weight: bold;
+}
+.header .nav-search-block .login-block span {
+  color: #444;
+  font-size: 17px;
+}
+.header .nav-search-block .login-block button {
+  border: none;
+  outline: none;
+  color: #444;
+  font-size: 17px;
+  background-color: transparent;
 }
 /*================================ Main ================================*/
 .main {
@@ -1256,16 +1335,6 @@ body .container {
       justify-content: center;
   margin-bottom: 20px;
 }
-.one-open-news .col-md-10 .main-content-of-the-page .block-with-write-a-comment .block-to-write-your-comment .block-just-for-center .exact-comment-block .faceb-comm-count-line .facebook-comment {
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
-  background-color: #3b5998;
-  padding: 5px 20px;
-  margin-right: 25px;
-}
 .one-open-news .col-md-10 .main-content-of-the-page .block-with-write-a-comment .block-to-write-your-comment .block-just-for-center .exact-comment-block .faceb-comm-count-line .num-of-comments {
   color: #444;
   font-size: 18px;
@@ -1735,6 +1804,334 @@ body .container {
   font-weight: bold;
   text-transform: uppercase;
 }
+/*================================ Edit account ================================*/
+.edit-account {
+  width: 100%;
+  margin: 50px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.edit-account .col-md-10 {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 70px;
+}
+.edit-account .col-md-10 .my-cab {
+  color: deeppink;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.edit-account .col-md-10 .your-akk-block {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.edit-account .col-md-10 .your-akk-block .avatar-block {
+  width: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-right: 25px;
+}
+.edit-account .col-md-10 .your-akk-block .avatar-block img {
+  width: 100px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .avatar-block input {
+  display: none;
+}
+.edit-account .col-md-10 .your-akk-block .avatar-block button {
+  border: none;
+  outline: none;
+  color: #444;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.edit-account .col-md-10 .your-akk-block .avatar-block button:hover {
+  color: deeppink;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-right: 25px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 25px;
+  border: 2px solid #444;
+  padding: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-m-sp {
+  color: deeppink;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line:last-child {
+  margin-bottom: 0;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info-tx {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info-tx .inf-sp {
+  color: #444;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info-tx span {
+  color: #ADADAD;
+  font-size: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info .inf-sp {
+  color: #444;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info span {
+  color: #ADADAD;
+  font-size: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info .for-lb {
+  color: #444;
+  font-size: 16px;
+  margin: 0 7px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info .rad-inp {
+  display: none;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info .radio-bt {
+  font-weight: normal;
+  color: #444;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 22px;
+  font-size: 12px;
+  margin: 0;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info .radio-bt:before {
+  color: deeppink;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  line-height: 19px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px 0px rgba(255, 255, 255, 0.8);
+  border-radius: 35px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info input[type=radio]:checked + .radio-bt:before {
+  content: "\25CF";
+  font-size: 29px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info select {
+  width: 17%;
+  height: 25px;
+  border: 1px solid #444;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding-left: 4px;
+  margin-right: 8px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info select:focus {
+  border: 1px solid deeppink;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info input {
+  width: 40%;
+  height: 25px;
+  padding-left: 7px;
+  border: 1px solid #444;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .current-info input:focus {
+  border: 1px solid deeppink;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .change-info {
+  margin-right: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .change-info input {
+  display: none;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .change-info .checkbox {
+  font-weight: normal;
+  color: #444;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 22px;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .change-info .checkbox:before {
+  color: deeppink;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px 0px rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .change-info input[type=checkbox]:checked + .checkbox:before {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-line .change-info .for-lb {
+  color: #444;
+  font-size: 16px;
+  margin-left: 7px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-left: 15px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl .inf-sp {
+  color: #444;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl textarea {
+  width: 70%;
+  height: 100px;
+  resize: none;
+  border: 1px solid #444;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 9px;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .one-info-block .inf-bl textarea:focus {
+  border: 1px solid deeppink;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .change-inf-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.edit-account .col-md-10 .your-akk-block .account-info-block .change-inf-line button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 9px 20px;
+  background-color: deeppink;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.edit-account .col-md-2 {
+  min-height: 600px;
+  border: 1px solid #000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.edit-account .col-md-2 .advertisinig {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 /*================================ Footer ================================*/
 .footer {
   width: 100%;
@@ -1771,4 +2168,272 @@ body .container {
 }
 .footer .footer-nav-block li a:hover {
   color: deeppink;
+}
+/*================================ Modal windows ================================*/
+.modal-register {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  background-color: rgba(68, 68, 68, 0.7);
+}
+.modal-register .modal-window {
+  position: fixed;
+  top: 5%;
+  left: calc(0vw);
+  right: calc(0vw);
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  padding: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #fff;
+}
+.modal-register .modal-window .t-sp {
+  color: #444;
+  font-size: 19px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.modal-register .modal-window .or-sp {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.modal-register .modal-window .fb-button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: #3b5998;
+  margin-bottom: 15px;
+}
+.modal-register .modal-window .m-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 25px;
+}
+.modal-register .modal-window .m-line .m-sp {
+  color: deeppink;
+  font-size: 17px;
+  font-weight: bold;
+}
+.modal-register .modal-window .m-line input {
+  width: 55%;
+  height: 30px;
+  border: 1px solid #444;
+  padding-left: 7px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.modal-register .modal-window .reg-bt {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 15px;
+  background-color: #444;
+  margin-bottom: 15px;
+}
+.modal-register .modal-window .reg-bt:hover {
+  background-color: deeppink;
+}
+.modal-register .modal-window .close-bt {
+  position: absolute;
+  content: '';
+  top: 7px;
+  right: 7px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #444;
+  font-size: 20px;
+}
+.modal-login {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  background-color: rgba(68, 68, 68, 0.7);
+}
+.modal-login .modal-window {
+  position: fixed;
+  top: 5%;
+  left: calc(0vw);
+  right: calc(0vw);
+  margin-left: auto;
+  margin-right: auto;
+  width: 385px;
+  padding: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #fff;
+}
+.modal-login .modal-window .t-sp {
+  color: #444;
+  font-size: 19px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.modal-login .modal-window .l-line {
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 25px;
+}
+.modal-login .modal-window .l-line .m-sp {
+  color: deeppink;
+  font-size: 17px;
+  font-weight: bold;
+}
+.modal-login .modal-window .l-line input {
+  width: 55%;
+  height: 30px;
+  border: 1px solid #444;
+  padding-left: 7px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.modal-login .modal-window .reg-bt {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 15px;
+  background-color: #444;
+  margin-bottom: 15px;
+}
+.modal-login .modal-window .reg-bt:hover {
+  background-color: deeppink;
+}
+.modal-login .modal-window .close-bt {
+  position: absolute;
+  content: '';
+  top: 7px;
+  right: 7px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #444;
+  font-size: 20px;
+}
+.modal-search {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  background-color: rgba(68, 68, 68, 0.7);
+}
+.modal-search .modal-window {
+  position: fixed;
+  top: 5%;
+  left: calc(0vw);
+  right: calc(0vw);
+  margin-left: auto;
+  margin-right: auto;
+  width: 520px;
+  padding: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #fff;
+}
+.modal-search .modal-window .t-sp {
+  color: #444;
+  font-size: 19px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.modal-search .modal-window .search-line {
+  width: 90%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.modal-search .modal-window .search-line input {
+  width: 70%;
+  height: 35px;
+  border: 1px solid #444;
+  padding-left: 10px;
+}
+.modal-search .modal-window .search-line input:focus {
+  border: 1px solid deeppink;
+}
+.modal-search .modal-window .search-line .reg-bt {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 15px;
+  background-color: #444;
+}
+.modal-search .modal-window .search-line .reg-bt:hover {
+  background-color: deeppink;
+}
+.modal-search .modal-window .close-bt {
+  position: absolute;
+  content: '';
+  top: 7px;
+  right: 7px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #444;
+  font-size: 20px;
 }

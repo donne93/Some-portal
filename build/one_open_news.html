@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
   </head>
   <body>
     <div class="container clear">
       <header>
-        <div class="header"><a href="#" class="logotype">Logotype</a>
+        <div class="header">
+          <div class="logo-forum"><a href="#" class="logotype">Logotype</a><a href="#" class="forum-bt">Форум</a></div>
           <div class="nav-search-block">
             <ul class="header-nav-menu">
               <li><a href="#">Мода</a></li>
@@ -22,7 +24,15 @@
               <li><a href="#">Красота</a></li>
               <li><a href="#">Здоровье</a></li>
               <li><a href="#">Дети</a></li>
-            </ul><a href="#" class="forum-bt">Форум</a>
+            </ul>
+            <!--.not-login-block
+            button(type="button") Вход
+            span /
+            button(type="button") Регистрация//
+            -->
+            <div class="login-block"><a href="#" class="your-akk"><i aria-hidden="true" class="fa fa-user-o"></i><span class="akk-n">Username</span></a><span>/</span>
+              <button type="button">Выйти</button>
+            </div>
           </div>
         </div>
       </header>
@@ -60,9 +70,7 @@
                 <div class="block-to-write-your-comment">
                   <div class="block-just-for-center">
                     <form class="exact-comment-block">
-                      <div class="faceb-comm-count-line">
-                        <button type="button" class="facebook-comment">Комментировать через Facebook</button><span class="num-of-comments">5 комментариев</span>
-                      </div>
+                      <div class="faceb-comm-count-line"><span class="num-of-comments">5 комментариев</span></div>
                       <textarea placeholder="Текст комментария"></textarea>
                       <div class="send-param-line">
                         <div class="some-param">
