@@ -3061,33 +3061,6 @@ body .container {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.forum-open-topic .enter-message-block .smile-line {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  margin-bottom: 10px;
-}
-.forum-open-topic .enter-message-block .smile-line button {
-  border: none;
-  outline: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-color: transparent;
-}
-.forum-open-topic .enter-message-block .smile-line button .fa {
-  color: #444;
-}
-.forum-open-topic .enter-message-block .smile-line button:hover .fa {
-  color: deeppink;
-}
 .forum-open-topic .enter-message-block textarea {
   width: 100%;
   height: 150px;
@@ -3105,12 +3078,31 @@ body .container {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
-.forum-open-topic .enter-message-block .send-line button {
+.forum-open-topic .enter-message-block .send-line .smile-bt {
+  border: none;
+  outline: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: transparent;
+}
+.forum-open-topic .enter-message-block .send-line .smile-bt .fa {
+  color: #444;
+}
+.forum-open-topic .enter-message-block .send-line .smile-bt:hover .fa {
+  color: deeppink;
+}
+.forum-open-topic .enter-message-block .send-line .send-bt {
   border: none;
   outline: none;
   color: #fff;
@@ -3121,8 +3113,36 @@ body .container {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-.forum-open-topic .enter-message-block .send-line button:hover {
+.forum-open-topic .enter-message-block .send-line .send-bt:hover {
   box-shadow: 0 0 10px deeppink;
+}
+.forum-open-topic .create-new-topic {
+  width: 25%;
+  height: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  box-shadow: 0 0 15px #ADADAD;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.forum-open-topic .create-new-topic a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 15px;
+  background-color: deeppink;
+  border: 1px solid deeppink;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.forum-open-topic .create-new-topic a:hover {
+  color: deeppink;
+  background-color: #fff;
 }
 .forum-open-topic .paginator {
   width: 100%;
@@ -3210,6 +3230,112 @@ body .container {
 }
 .forum-open-topic .paginator .topic-paginator li .active-p {
   color: deeppink;
+}
+/*================================ Create new topic ================================*/
+.create-new-topic-page {
+  width: 100%;
+  margin: 50px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.create-new-topic-page .create-block {
+  width: 100%;
+  padding: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  box-shadow: 0 0 15px #ADADAD;
+  background-color: #fff;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.create-new-topic-page .create-block .top-cr {
+  color: deeppink;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+.create-new-topic-page .create-block select {
+  width: 90%;
+  height: 45px;
+  border: 1px solid #DAE3E6;
+  background-color: #F7F9FA;
+  padding-left: 10px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.create-new-topic-page .create-block input {
+  width: 90%;
+  height: 45px;
+  border: 1px solid #DAE3E6;
+  background-color: #F7F9FA;
+  padding-left: 10px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.create-new-topic-page .create-block textarea {
+  width: 90%;
+  height: 300px;
+  border: 1px solid #DAE3E6;
+  background-color: #F7F9FA;
+  padding: 15px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 40px;
+}
+.create-new-topic-page .create-block button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 7px 20px;
+  background-color: deeppink;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.create-new-topic-page .create-block button:hover {
+  box-shadow: 0 0 15px deeppink;
+}
+.create-new-topic-page .create-block .help-line {
+  width: 90%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.create-new-topic-page .create-block .help-line span {
+  color: #444;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.create-new-topic-page .create-block .help-line a {
+  color: deeppink;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.create-new-topic-page .create-block .help-line a:hover {
+  color: #444;
+  text-decoration: none;
 }
 /*================================ Footer ================================*/
 .footer {
