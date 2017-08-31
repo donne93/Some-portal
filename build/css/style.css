@@ -2281,10 +2281,12 @@ body .container {
   height: 60px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding-left: 15px;
   border-right: 1px solid #444;
 }
@@ -2297,6 +2299,34 @@ body .container {
 .forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes a:hover {
   color: #444;
   text-decoration: none;
+}
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes .pages-num {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes .pages-num span {
+  color: #444;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes .pages-num .page-counts {
+  color: #444;
+  font-size: 14px;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes .pages-num .page-counts:hover {
+  color: deeppink;
+  text-decoration: none;
+}
+.forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .few-themes .pages-num .page-counts:last-child {
+  margin-right: 0;
 }
 .forum .forums-main-themes .one-forum-main-theme .block-with-theme-list .f-theme-line .count-mess {
   width: 20%;
@@ -2559,10 +2589,12 @@ body .container {
   height: 80px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding-left: 15px;
   border-right: 1px solid #444;
 }
@@ -2575,6 +2607,34 @@ body .container {
 .forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .few-themes a:hover {
   color: #444;
   text-decoration: none;
+}
+.forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .few-themes .pages-num {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .few-themes .pages-num span {
+  color: #444;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .few-themes .pages-num .page-counts {
+  color: #444;
+  font-size: 14px;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+.forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .few-themes .pages-num .page-counts:hover {
+  color: deeppink;
+  text-decoration: none;
+}
+.forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .few-themes .pages-num .page-counts:last-child {
+  margin-right: 0;
 }
 .forum-all-topics .all-topics-list .block-with-topics-list .f-theme-line .autor {
   width: 10%;
@@ -2918,6 +2978,10 @@ body .container {
   font-weight: bold;
   margin: 0 10px;
 }
+.forum-open-topic .all-message-block .one-message-block .exact-message .mess-data-line .tp-name {
+  color: deeppink;
+  font-size: 17px;
+}
 .forum-open-topic .all-message-block .one-message-block .exact-message .mess-data-line span {
   color: #444;
   font-size: 17px;
@@ -2964,6 +3028,15 @@ body .container {
 .forum-open-topic .all-message-block .one-message-block .exact-message .exact-text .answ-line button:hover {
   color: #444;
   text-decoration: none;
+}
+.forum-open-topic .all-message-block .autor-mess {
+  box-shadow: 0 0 15px deeppink;
+}
+.forum-open-topic .all-message-block .autor-mess .exact-message {
+  border-left: 1px solid deeppink;
+}
+.forum-open-topic .all-message-block .autor-mess .exact-message .mess-data-line {
+  border-bottom: 1px solid deeppink;
 }
 .forum-open-topic .enter-message-block {
   width: 80%;
