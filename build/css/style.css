@@ -45,10 +45,26 @@ body .container {
   margin-bottom: 20px;
 }
 .header .logo-forum .logotype {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.header .logo-forum .logotype .logo-sp {
   font-size: 55px;
   color: #000;
   font-family: "logo";
   color: deeppink;
+  margin-right: 4px;
+}
+.header .logo-forum .logotype .exact-shp {
+  width: 46px;
+  height: 49px;
+  background: url('../img/sp.png') no-repeat;
 }
 .header .logo-forum .forum-bt {
   color: #fff;
