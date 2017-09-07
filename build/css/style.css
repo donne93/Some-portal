@@ -3658,6 +3658,7 @@ body .container {
   font-weight: bold;
   font-size: 21px;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 .faq .all-quests-block .faq-block .questions-lines {
   display: -ms-flexbox;
