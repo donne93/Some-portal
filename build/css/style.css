@@ -3760,6 +3760,60 @@ body .container {
   font-size: 13px;
   font-weight: bold;
 }
+/*================================ Eror 404 ================================*/
+.eror {
+  width: 100%;
+  height: 67vh;
+  margin: 50px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.eror .b-sp {
+  color: #444;
+  font-size: 110px;
+  font-weight: bold;
+}
+.eror .p-sp {
+  color: deeppink;
+  font-size: 110px;
+  font-weight: bold;
+}
+.eror .to-m {
+  color: deeppink;
+  font-size: 80px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 40px 0;
+}
+.eror .to-m:hover {
+  color: #444;
+  text-decoration: none;
+}
+.eror .ops-line,
+.eror .er-line {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.eror .ops-line .log-sp,
+.eror .er-line .log-sp {
+  width: 78px;
+  height: 87px;
+  background: url('../img/eror_sp.png') no-repeat;
+  margin-left: 30px;
+}
 /*================================ Footer ================================*/
 .footer {
   width: 100%;
