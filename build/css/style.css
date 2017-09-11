@@ -236,7 +236,7 @@ body .container {
 }
 .main .col-md-10 .search-block-for-main input:focus {
   color: deeppink;
-  border: 2px solid deeppink;
+  border: 2px solid #ff1493;
   border-right: none;
 }
 .main .col-md-10 .search-block-for-main button {
@@ -3807,12 +3807,37 @@ body .container {
   -ms-flex-pack: center;
       justify-content: center;
 }
+.eror .ops-line .b-s-sp,
+.eror .er-line .b-s-sp {
+  color: #444;
+  font-size: 45px;
+}
 .eror .ops-line .log-sp,
 .eror .er-line .log-sp {
+  font-size: 55px;
+  color: #444;
+  font-family: "logo";
+  color: deeppink;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.eror .ops-line .shpilka,
+.eror .er-line .shpilka {
+  width: 13px;
+  height: 52px;
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
+  background: url('../img/shpilka.png') no-repeat;
+  margin-right: 3px;
+}
+.eror .ops-line .boot,
+.eror .er-line .boot {
   width: 78px;
   height: 87px;
-  background: url('../img/eror_sp.png') no-repeat;
-  margin-left: 30px;
+  -webkit-transform: rotate(400deg);
+          transform: rotate(400deg);
+  background: url('../img/boot.png') no-repeat;
+  margin-right: 8px;
 }
 /*================================ Footer ================================*/
 .footer {
