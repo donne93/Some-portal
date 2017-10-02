@@ -2,6 +2,7 @@
 <html lang="rus">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Create new topic</title>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -15,24 +16,29 @@
     <div class="container clear">
       <header>
         <div class="header">
+          <div class="line-for-admin"><span>Вы зашли как администратор!</span><a href="#" class="to-adm">Перейти в админ панель</a></div>
           <div class="logo-forum"><a href="#" class="logotype"><span class="logo-sp">Shpilka</span><span class="exact-shp"></span></a><a href="#" class="forum-bt">Форум</a></div>
           <div class="nav-search-block">
-            <ul class="header-nav-menu">
-              <li><a href="#">Мода</a></li>
-              <li><a href="#">Звезды</a></li>
-              <li><a href="#">Психология</a></li>
-              <li><a href="#">Красота</a></li>
-              <li><a href="#">Здоровье</a></li>
-              <li><a href="#">Дети</a></li>
-            </ul>
-            <!--.not-login-block
-            button(type="button") Вход
-            span /
-            button(type="button") Регистрация//
-            -->
-            <div class="login-block"><a href="#" class="your-akk"><i aria-hidden="true" class="fa fa-user-o"></i><span class="akk-n">Username</span></a><span>/</span>
-              <button type="button">Выйти</button>
+            <div class="languages-block"><a href="#" class="curent-lang">РУС</a><span>/</span><a href="#">УКР</a></div>
+            <div class="menu-link"><span></span><span></span><span></span><span></span></div>
+            <div class="wrap-menu">
+              <ul class="header-nav-menu">
+                <li><a href="#">Мода</a></li>
+                <li><a href="#">Звезды</a></li>
+                <li><a href="#">Психология</a></li>
+                <li><a href="#">Красота</a></li>
+                <li><a href="#">Здоровье</a></li>
+                <li><a href="#">Дети</a></li>
+              </ul>
             </div>
+            <div class="not-login-block"><a href="#">Вход</a><span>/</span><a href="#">Регистрация</a></div>
+            <!--.login-block
+            a(href="#").your-akk
+                i(aria-hidden="true").fa.fa-user-o
+                span.akk-n Username
+            span /
+            button(type="button") Выйти//
+            -->
           </div>
         </div>
       </header>
@@ -47,7 +53,7 @@
             <input type="text" placeholder="Введите название Вашей темы"/>
             <textarea placeholder="Напишите первое сообщение в Вашей теме"></textarea>
             <button type="submit">Создать</button>
-            <div class="help-line"><span>Есть вопросы? Обратитесь к</span><a href="#">администрации сайта.</a></div>
+            <div class="help-line"><span>Есть вопросы? Обратитесь к <a href="#">администрации сайта.</a></span></div>
           </form>
         </div>
       </main>

@@ -2,6 +2,7 @@
 <html lang="rus">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>One open news</title>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -15,48 +16,57 @@
     <div class="container clear">
       <header>
         <div class="header">
+          <div class="line-for-admin"><span>Вы зашли как администратор!</span><a href="#" class="to-adm">Перейти в админ панель</a></div>
           <div class="logo-forum"><a href="#" class="logotype"><span class="logo-sp">Shpilka</span><span class="exact-shp"></span></a><a href="#" class="forum-bt">Форум</a></div>
           <div class="nav-search-block">
-            <ul class="header-nav-menu">
-              <li><a href="#">Мода</a></li>
-              <li><a href="#">Звезды</a></li>
-              <li><a href="#">Психология</a></li>
-              <li><a href="#">Красота</a></li>
-              <li><a href="#">Здоровье</a></li>
-              <li><a href="#">Дети</a></li>
-            </ul>
-            <!--.not-login-block
-            button(type="button") Вход
-            span /
-            button(type="button") Регистрация//
-            -->
-            <div class="login-block"><a href="#" class="your-akk"><i aria-hidden="true" class="fa fa-user-o"></i><span class="akk-n">Username</span></a><span>/</span>
-              <button type="button">Выйти</button>
+            <div class="languages-block"><a href="#" class="curent-lang">РУС</a><span>/</span><a href="#">УКР</a></div>
+            <div class="menu-link"><span></span><span></span><span></span><span></span></div>
+            <div class="wrap-menu">
+              <ul class="header-nav-menu">
+                <li><a href="#">Мода</a></li>
+                <li><a href="#">Звезды</a></li>
+                <li><a href="#">Психология</a></li>
+                <li><a href="#">Красота</a></li>
+                <li><a href="#">Здоровье</a></li>
+                <li><a href="#">Дети</a></li>
+              </ul>
             </div>
+            <div class="not-login-block"><a href="#">Вход</a><span>/</span><a href="#">Регистрация</a></div>
+            <!--.login-block
+            a(href="#").your-akk
+                i(aria-hidden="true").fa.fa-user-o
+                span.akk-n Username
+            span /
+            button(type="button") Выйти//
+            -->
           </div>
         </div>
       </header>
       <main class="clearfix">
         <div class="col-md-12 clear one-open-news">
           <div class="col-md-10 clear">
-            <div class="left-nav-menu"><span class="page-name">Мода</span>
-              <ul class="left-menu-for-page">
-                <li><span class="list-simbol">&#10084</span><a href="#" class="active-side-page">Мода на звездах</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Красная дорожка</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Тренды</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Одежда</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Нижнее белье</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Эволюция стиля</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Украшения и часы</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Обувь</a></li>
-                <li><span class="list-simbol">&#10084</span><a href="#">Обо всем</a></li>
-              </ul>
-              <div class="big-bt-block"><a href="#" class="forum-bt">Форум</a></div><span class="most-pop-news">Популярные новости</span>
-              <div class="one-pop-news"><a href="#" class="pop-news-pic"><img src="img/girl.jpg" alt="pic"/></a><a href="#" class="pop-news-name">Большая перемена</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione mollitia, vitae culpa autem, vero natus maiores quam sequi, aliquam labore tempore laboriosam repellendus nostrum, voluptates tenetur delectus voluptas dicta reprehenderit.</p>
+            <div class="left-nav-menu">
+              <div class="nav-menu"><span class="page-name">Мода</span>
+                <ul class="left-menu-for-page">
+                  <li><span class="list-simbol">&#10084</span><a href="#" class="active-side-page">Мода на звездах</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Красная дорожка</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Тренды</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Одежда</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Нижнее белье</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Эволюция стиля</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Украшения и часы</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Обувь</a></li>
+                  <li><span class="list-simbol">&#10084</span><a href="#">Обо всем</a></li>
+                </ul>
+                <div class="big-bt-block"><a href="#" class="forum-bt">Форум</a></div>
               </div>
-              <div class="one-pop-news"><a href="#" class="pop-news-pic"><img src="img/girl.jpg" alt="pic"/></a><a href="#" class="pop-news-name">Лето 2017: Высокая мода доступна всем</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione mollitia, vitae culpa autem, vero natus maiores quam sequi, aliquam labore tempore laboriosam repellendus nostrum, voluptates tenetur delectus voluptas dicta reprehenderit.</p>
+              <div class="popular-posts"><span class="most-pop-news">Популярные новости</span>
+                <div class="one-pop-news"><a href="#" class="pop-news-pic"><img src="img/girl.jpg" alt="pic"/></a><a href="#" class="pop-news-name">Большая перемена</a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione mollitia, vitae culpa autem, vero natus maiores quam sequi, aliquam labore tempore laboriosam repellendus nostrum, voluptates tenetur delectus voluptas dicta reprehenderit.</p>
+                </div>
+                <div class="one-pop-news"><a href="#" class="pop-news-pic"><img src="img/girl.jpg" alt="pic"/></a><a href="#" class="pop-news-name">Лето 2017: Высокая мода доступна всем</a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione mollitia, vitae culpa autem, vero natus maiores quam sequi, aliquam labore tempore laboriosam repellendus nostrum, voluptates tenetur delectus voluptas dicta reprehenderit.</p>
+                </div>
               </div>
             </div>
             <div class="main-content-of-the-page"><span class="big-name-of-a-news">Как закадрить парня своей мечты</span>

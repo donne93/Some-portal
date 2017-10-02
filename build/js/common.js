@@ -13,5 +13,15 @@ $(document).ready(function() {
         $(this).find('.plus').toggleClass('active');
         $(this).find('.message-block').slideToggle();
     });
+
+    var link = $('.menu-link'),
+        menu = $('.wrap-menu');
+
+
+    link.click(function() {
+        $(this).toggleClass('menu-link--active');
+        menu.toggleClass('wrap-menu--open');
+        $('body').toggleClass('overflow-hidden');
+    });
     
 });
