@@ -798,6 +798,7 @@ body a:hover {
   -ms-flex-pack: start;
       justify-content: flex-start;
   margin: 0;
+  margin-bottom: 50px;
 }
 .one-theme-page .col-md-10 .page-content-block .left-nav-menu .left-menu-for-page li {
   display: -ms-flexbox;
@@ -1128,6 +1129,7 @@ body a:hover {
   -ms-flex-pack: start;
       justify-content: flex-start;
   margin: 0;
+  margin-bottom: 50px;
 }
 .one-side-theme-page .col-md-10 .left-nav-menu .left-menu-for-page li {
   display: -ms-flexbox;
